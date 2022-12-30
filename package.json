@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "lint": "",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts}": [
+      "git add ."
+    ],
+    "**/*.{scss}": [
+      "git add ."
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "commitlint": "^17.3.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0"
+  }
+}

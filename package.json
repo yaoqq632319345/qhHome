@@ -2,8 +2,8 @@
   "scripts": {
     "format": "prettier --write \"./src/**/*.{html,vue,ts,js,json,md,cjs,scss}\"",
     "lint": "npm run format && npm run lint:script && npm run lint:style",
-    "lint:script": "eslint --ext .js,.jsx,.cjs,.ts,.tsx --fix --quiet ./",
-    "lint:style": "stylelint --fix \"src/**/*.{css,scss}\"",
+    "lint:script": "eslint --ext .js,.jsx,.cjs,.ts,.tsx,.vue --fix --quiet ./",
+    "lint:style": "stylelint --fix \"src/**/*.{css,scss,vue}\"",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -12,10 +12,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{js,jsx,tsx,ts}": [
-      "npm run lint"
-    ],
-    "**/*.{scss}": [
+    "**/*.{js,jsx,tsx,ts,vue,scss,json,cjs}": [
       "npm run lint"
     ]
   },

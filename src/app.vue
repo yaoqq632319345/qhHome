@@ -9,11 +9,11 @@ alert(1);
 
 <style lang="scss">
 .base {
-  height: 100px;
-  background: #000;
-  font-size: 10px;
-  border: 1px solid #ccc;
-  width: 100px;
   display: flex;
+  width: 100px;
+  height: 100px;
+  font-size: 10px;
+  background: #000;
+  border: 1px solid #ccc;
 }
 </style>

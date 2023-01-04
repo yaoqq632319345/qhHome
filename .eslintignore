@@ -1,19 +1,12 @@
-*.json
 *.html
-*rc.js
 *.svg
 *.woff
 *.ttf
-*.css
 
 .nuxt
 .husky
 .output
 
-.eslintrc.js
-.prettierrc.js
-package.json
-tsconfig.ts
 README.md
 node_modules
 *.sh

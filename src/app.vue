@@ -3,9 +3,7 @@
   <div>2</div>
 </template>
 
-<script setup lang="ts">
-alert(1);
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss">
 .base {

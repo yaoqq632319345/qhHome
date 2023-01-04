@@ -6,11 +6,6 @@ output
 .output
 .husky
 
-.eslintrc.js
-.prettierrc.js
-tsconfig.json
-package.json
-tsconfig.ts
 README.md
 
 
@@ -19,9 +14,3 @@ README.md
 **/*.sh
 
 /public/*
-
-# 如果不希望 prettier 检查代码文件的话
-*.ts
-*.tsx
-*.jsx
-*.js

@@ -1,15 +1,24 @@
 {
   "scripts": {
     "format": "prettier --write \"./src/**/*.{html,vue,ts,js,json,md,cjs,scss}\"",
+    "format:-------des": "格式化代码",
     "lint": "npm run format && npm run lint:script && npm run lint:style",
+    "lint:-------des": "格式化代码并校验",
     "lint:script": "eslint --ext .js,.jsx,.cjs,.ts,.tsx,.vue --fix --quiet ./",
+    "lint:script:-------des": "格式化script代码",
     "lint:style": "stylelint --fix \"src/**/*.{css,scss,vue}\"",
+    "lint:style:-------des": "格式化style代码",
     "build": "nuxt build",
+    "build:-------des": "构建代码，同时生成nodejs服务端代码",
     "dev": "nuxt dev",
+    "dev:-------des": "本地运行",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "generate:-------des": "仅生成静态文件",
     "postinstall": "nuxt prepare",
-    "prepare": "husky install"
+    "postinstall:-------des": "在npm install命令后执行. nuxt prepare",
+    "prepare": "husky install",
+    "prepare:-------des": "在两种情况前运行，一是npm publish命令前，二是不带参数的npm install命令；它会在prepublish之后、prepublishOnly之前执行. 执行husky install git钩子"
   },
   "lint-staged": {
     "**/*.{js,jsx,tsx,ts,vue,scss,json,cjs}": [

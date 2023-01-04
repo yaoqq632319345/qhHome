@@ -11,7 +11,8 @@ module.exports = {
     'eslint:recommended',
     'prettier', // 自动修复
     'plugin:prettier/recommended',
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
+    // 'plugin:vue/essential',
     'plugin:@typescript-eslint/recommended'
   ],
   parser: 'vue-eslint-parser',
@@ -24,7 +25,6 @@ module.exports = {
   rules: {
     // 3. 注意要加上这一句，开启 prettier 自动修复的功能
     'prettier/prettier': 'error',
-    'vue/no-v-model-argument': 'off',
-    'vue/no-multiple-template-root': 'off'
+    'vue/no-v-model-argument': 'off'
   }
 };

@@ -1,15 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {} from 'nuxt';
 export default defineNuxtConfig({
+  postcss: {
+    config: true,
+    plugins: {
+      autoprefixer: {
+        overrideBrowserslist: ['last 3 versions', '> 1%', 'ie 8', 'ie 7']
+      }
+    }
+  },
   app: {
     // baseURL: './'
     // buildAssetsDir: ''
     // cdnURL: ''
     // head: {}
   },
-  generate: {},
+  css: ['@/assets/index.scss'],
+  // builder: 'vite',
+  vite: {},
+  // generate: {},
   // buildDir: '',
-  workspaceDir: './src',
+  // serverDir: 'dist',
+  // rootDir: './src',
   srcDir: './src'
-  // rootDir: './src'
 });

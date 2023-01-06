@@ -3,7 +3,10 @@
   <div>2</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { request } from '@/apis';
+request({ url: '1111111' });
+</script>
 
 <style lang="scss">
 .base {

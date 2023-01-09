@@ -8,6 +8,8 @@
     "lint:script:-------des": "格式化script代码",
     "lint:style": "stylelint --fix \"src/**/*.{css,scss,vue}\"",
     "lint:style:-------des": "格式化style代码",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "build": "nuxt build",
     "build:-------des": "构建代码，同时生成nodejs服务端代码",
     "dev": "nuxt dev",
@@ -34,6 +36,7 @@
     "@types/qs": "^6.9.7",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
+    "@vue/test-utils": "^2.2.7",
     "autoprefixer": "^10.4.13",
     "commitlint": "^17.3.0",
     "eslint": "^7.24.0",
@@ -61,7 +64,8 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-prettier": "^2.0.0",
-    "stylelint-scss": "^4.3.0"
+    "stylelint-scss": "^4.3.0",
+    "vitest": "^0.26.3"
   },
   "dependencies": {
     "axios": "^1.2.2",

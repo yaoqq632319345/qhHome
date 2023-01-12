@@ -4,7 +4,7 @@ import { describe, it, expect } from 'vitest';
 describe('HelloWorld.vue', () => {
   it('renders props.msg when passed', () => {
     const wrapper = shallowMount(test, {
-      props: { msg: 'new message' }
+      props: { msg: '' }
     });
     expect(wrapper.text()).toMatch('new message');
   });

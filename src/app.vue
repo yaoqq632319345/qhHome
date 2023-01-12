@@ -1,11 +1,20 @@
 <template>
   <div class="base">1</div>
   <div>2</div>
+  <test :msg="obj"></test>
+  <button @click="toggle">toggle</button>
 </template>
 
 <script setup lang="ts">
+import test from './components/test.vue';
 import { request } from '@/apis';
+import { ref } from 'vue';
 request({ url: '1111111' });
+
+const obj = ref(1);
+const toggle = () => {
+  obj.value++;
+};
 </script>
 
 <style lang="scss">

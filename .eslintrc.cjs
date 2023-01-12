@@ -25,6 +25,10 @@ module.exports = {
   rules: {
     // 3. 注意要加上这一句，开启 prettier 自动修复的功能
     'prettier/prettier': 'error',
+    // 解构props
+    'vue/no-setup-props-destructure': 'off',
+    // 组件名称
+    'vue/multi-word-component-names': 'off',
     'vue/no-v-model-argument': 'off'
   }
 };

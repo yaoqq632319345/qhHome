@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       }
     }
   },
+  modules: ['@unocss/nuxt'],
   app: {
     // baseURL: './'
     // buildAssetsDir: ''

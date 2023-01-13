@@ -1,6 +1,6 @@
 <template>
   <div class="base">1</div>
-  <div>2</div>
+  <div class="text-25px text-#ff6700 bg-#ccc">2</div>
   <test :msg="obj"></test>
   <button @click="toggle">toggle</button>
 </template>
